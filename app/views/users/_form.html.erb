@@ -1,0 +1,49 @@
+<!-- Old original code  -->
+<%#= form_with(model: user, local: true) do |form| %>
+
+
+
+<%= form_for :user, url: '/users' do |f| %>
+
+    <div class="field">
+      Name: <%= f.text_field :name %>
+     </div>
+    <div class="field">
+      Email: <%= f.text_field :email %>
+      </div>
+    <div class="field">
+      Password: <%= f.password_field :password %>
+    </div>
+    <div class="field">
+      Password Confirmation: <%= f.password_field :password_confirmation %>
+    </div>
+  <%= f.submit "Submit" %>
+
+<% end %>
+
+
+
+  <!-- <div class="field">
+    <%#= form.label :name %>
+    <%#= form.text_field :name, id: :user_name %>
+  </div>
+
+  <div class="field">
+    <%#= form.label :email %>
+    <%#= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%#= form.label :password %>
+    <%#= form.text_field :password, id: :user_password %>
+  </div>
+
+  <div class="field">
+    <%#= form.label :password_digest %>
+    <%#= form.text_field :password_digest, id: :user_password_digest %>
+  </div>
+
+  <div class="actions">
+    <%#= form.submit %>
+  </div> -->
+<%# end %>
